@@ -7,7 +7,7 @@ hero:
   text: "一个有趣站点"
   tagline: 仙舟虽有长乐天，奈何流云渡停云
   image:
-    src: /logo.png
+    src: /智识.png
     alt: 背景图片
   actions:
     - theme: brand
