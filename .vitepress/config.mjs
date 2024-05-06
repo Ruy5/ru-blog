@@ -3,7 +3,7 @@ import { set_sidebar } from "./utils/auto_sidebar.mjs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "Personal-tools",
+  base: "/Personal-tools/",
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   title: "猹言猹语",
   description: "A VitePress Site",
