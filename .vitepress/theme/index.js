@@ -13,7 +13,13 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     //樱花 Quaint 修改版
-
+    app.mixin({
+      mounted() {
+        // 挂载阶段触发樱花效果，并且出发后销毁樱花函数，使其不再触发
+        window.startSakura()
+        window.startSakura = () => {}
+      },
+    })
 
   }
 }
