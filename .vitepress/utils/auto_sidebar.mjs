@@ -15,6 +15,14 @@ const WHITE_LIST = [
 // 判断是否是文件夹
 const isDirectory = (path) => fs.lstatSync(path).isDirectory();
 
+const removeBlogPrefix = (str) => {
+  if (str.startsWith("blog")) {
+    return str.slice(4); // 删除开头的4个字符
+  } else {
+    return str;
+  }
+}
+
 // 取差值
 const intersections = (arr1, arr2) =>
   Array.from(new Set(arr1.filter((item) => !new Set(arr2).has(item))));
@@ -35,7 +43,7 @@ function getList(params, path1, pathname) {
       res.push({
         text: params[file],
         collapsible: true,
-        items: getList(files, dir, `${pathname}/${params[file]}`),
+        items: getList(files, dir, removeBlogPrefix(`${pathname}/${params[file]}`) ),
       });
     } else {
       // 获取名字

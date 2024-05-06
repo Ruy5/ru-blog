@@ -10,8 +10,10 @@ export default defineConfig({
   title: "猹言猹语",
   description: "A VitePress Site",
   themeConfig: {
+    nextLinks: true,
+    prevLinks: true,
     outlineTitle: "目录",
-    outline: "deep",
+    outline: [2, 6],
     logo: '/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -23,7 +25,10 @@ export default defineConfig({
       // ] }
     ],
 
-    sidebar: { "/blog": set_sidebar("blog") },
+    sidebar: { "/blog": {
+      base: "/blog",
+      items: set_sidebar("blog")
+    },  },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Ruy5' },
@@ -60,3 +65,6 @@ export default defineConfig({
   },
 
 })
+
+
+console.log( JSON.stringify(set_sidebar("blog")) )
