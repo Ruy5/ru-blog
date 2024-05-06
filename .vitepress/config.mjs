@@ -1,10 +1,12 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from "./utils/auto_sidebar.mjs";
-
+import { sakuraScript } from "./utils/sakura.js";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/Personal-tools/",
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [["link", { rel: "icon", href: "/logo.png" }],
+    sakuraScript
+   ],
   title: "猹言猹语",
   description: "A VitePress Site",
   themeConfig: {
