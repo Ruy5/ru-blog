@@ -4,7 +4,7 @@ import { sakuraScript } from "./utils/sakura.js";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/Personal-tools/",
-  head: [["link", { rel: "icon", href: "/logo.png" }],
+  head: [["link", { rel: "icon", href: "/Personal-tools/logo.png" }],
     sakuraScript
    ],
   title: "猹言猹语",
