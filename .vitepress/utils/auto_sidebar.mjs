@@ -42,7 +42,7 @@ function getList(params, path1, pathname) {
       const files = fs.readdirSync(dir);
       res.push({
         text: params[file],
-        collapsible: true,
+        collapsed: true,
         items: getList(files, dir, removeBlogPrefix(`${pathname}/${params[file]}`) ),
       });
     } else {
@@ -55,7 +55,7 @@ function getList(params, path1, pathname) {
       }
       res.push({
         text: name,
-        link: `${pathname}/${name}`,
+        link: removeBlogPrefix(`${pathname}/${name}`),
       });
     }
   }

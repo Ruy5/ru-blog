@@ -10,15 +10,18 @@ export default defineConfig({
   title: "猹言猹语",
   description: "A VitePress Site",
   themeConfig: {
-    nextLinks: true,
-    prevLinks: true,
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
     outlineTitle: "目录",
     outline: [2, 6],
     logo: '/logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: '博客', link: '/blog/test.html' }
+      { text: '博客', link: '/blog/' },
+      { text: 'AI', link: 'http://1.12.236.243:8080/'}
       // { text: '博客', items: [
       //   { text: '前端', link: '/blog/blog1' },
       //   { text: '后端', link: '/blog/blog2' }
@@ -28,7 +31,7 @@ export default defineConfig({
     sidebar: { "/blog": {
       base: "/blog",
       items: set_sidebar("blog")
-    },  },
+    } } ,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Ruy5' },
@@ -66,5 +69,3 @@ export default defineConfig({
 
 })
 
-
-console.log( JSON.stringify(set_sidebar("blog")) )
