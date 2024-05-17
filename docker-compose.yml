@@ -1,0 +1,16 @@
+version: '3.8'
+services:  
+  vitepress-nginx:
+    image: nginx
+    container_name: vitepress-nginx
+    ports:
+      - "80:1080"
+    volumes:
+      - "./.vitepress/dist:/usr/share/nginx/html/vitepress"
+      - "./nginx.conf:/etc/nginx/nginx.conf"
+    networks:
+      - vitepress-net
+
+networks:
+  vitepress-net:
+    name: vitepress
