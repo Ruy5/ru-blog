@@ -3,8 +3,8 @@ import { set_sidebar } from "./utils/auto_sidebar.mjs";
 import { sakuraScript } from "./utils/sakura.js";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/Personal-tools/",
-  head: [["link", { rel: "icon", href: "/Personal-tools/logo.png" }],
+  base: "/",
+  head: [["link", { rel: "icon", href: "/logo.png" }],
     sakuraScript
    ],
   title: "猹言猹语",
@@ -47,7 +47,7 @@ export default defineConfig({
     
       ],
     footer: {
-      copyright: ".vitepress config.mjs 文件中 footer copyright 进行配置"
+      copyright: `<a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备2024101572号-1</a> `
     },
     // 设置搜索框的样式
     search: {
