@@ -78,7 +78,7 @@ defineOptions({
 
 ```json
 {
-     "main": "lib/button.vue",
+     "main": "index.js",
      "type": "module",
 }
 ```
