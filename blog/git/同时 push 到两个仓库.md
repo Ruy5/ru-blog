@@ -31,4 +31,20 @@ git push origin main
 git push backup main
 ```
 
+**方法二：配置多个 pushurl**
 
+通过配置多个 pushurl，可以一次性推送到两个远程仓库。使用以下命令：
+
+```bash
+git remote set-url --add --push origin https://your-first-repository-url.git
+git remote set-url --add --push origin https://your-second-repository-url.git
+```
+这样设置后，当你推送到 origin 时，会同时推送到两个 URL。
+
+## 验证配置
+
+可以通过以下命令验证你的配置：
+
+```bash
+git remote get-url --push origin
+```
