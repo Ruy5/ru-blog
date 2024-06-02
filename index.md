@@ -15,7 +15,7 @@ hero:
       link: /markdown-examples
     - theme: alt
       text: 工具
-      link: /api-examples
+      link: http://docs.feli.top:88/
 
 features:
   - title: Feature A

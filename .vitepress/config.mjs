@@ -21,7 +21,8 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
       { text: '博客', link: '/blog/' },
-      { text: 'AI', link: 'http://1.12.236.243:8080/'}
+      { text: 'AI', link: 'http://1.12.236.243:8080/'},
+      { text: '工具箱', link: 'http://1.12.236.243:88/'}
       // { text: '博客', items: [
       //   { text: '前端', link: '/blog/blog1' },
       //   { text: '后端', link: '/blog/blog2' }
