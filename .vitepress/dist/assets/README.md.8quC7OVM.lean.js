@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a4 as o}from"./chunks/framework.eSehZVqP.js";const m=JSON.parse('{"title":"Personal-tools","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),r={name:"README.md"},s=o("",4),l=[s];function n(_,c,i,p,d,h){return t(),a("div",null,l)}const E=e(r,[["render",n]]);export{m as __pageData,E as default};

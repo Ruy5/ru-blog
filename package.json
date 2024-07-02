@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "less": "^4.2.0",
+    "sass": "^1.77.6",
     "vitepress": "^1.1.4"
   },
   "scripts": {
@@ -8,6 +10,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "rufs": "^0.0.1"
+    "rufs": "^0.0.1",
+    "rui-v3": "^0.0.6"
   }
 }
