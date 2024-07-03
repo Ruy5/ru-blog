@@ -50,7 +50,7 @@ npm地址：https://www.npmjs.com/package/rui-v3
 
 ### img-cache-v3
 
-star数量：☆ 5
+star数量：☆ 10
 
 github地址：https://github.com/Ruy5/img-cache-v3
 
